@@ -36,7 +36,7 @@ public class SubFamilyResource {
     }
 
     @GET
-    @Path("/{id}/practices")
+    @Path("{id}/practices")
     public Response getAllPaginatedPracticesBySubFamilyId(@BeanParam PageRequestVM pageRequest, @BeanParam SortRequestVM sortRequest,
                                                           @Context UriInfo uriInfo, @PathParam("id") Long id) {
         log.debug("REST request to get a page of Practices");
