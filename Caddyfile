@@ -1,0 +1,3 @@
+vps-f2208d90.vps.ovh.net
+
+reverse_proxy 127.0.0.1:8080
