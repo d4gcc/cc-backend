@@ -38,8 +38,7 @@ jobs:
         user: ${{ secrets.DC_USER }}
         pass: ${{ secrets.DC_PASS }}
         scp: |-
-          ./target/quarkus-app/*.jar => /d4gcc/be-deploy/
-          "." => "$TARGET_DIR/test3/"
+          ./target/quarkus-app/*.jar => /d4gcc/be-deploy
         last_ssh: |-
           echo $LASTSSH
           ls -la
