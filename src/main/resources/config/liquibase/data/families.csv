@@ -1,0 +1,9 @@
+﻿id,family_id,name,description
+1,STR,Strategy,The project strategy stage makes it possible to determine the relevance and the challenges of the project.
+2,SPC,Specifications,"The specifications group together the elements of the project framework, the means implemented, the objectives and constraints of the project over the entire lifespan of the target product. Regardless of the type of project management: AGILE or classic V-cycle."
+3,UX/UI,Ux / Ui,The stages and methods of designing digital services to define the best solutions for interactions with the user
+4,CTN,Contents,All elements of a digital service available to the end user
+5,FRT,Frontend,The stages and methods of designing digital services to define the best solutions for interactions with the user
+6,ARCH,Architecture,"It defines all the typologies of common technical service components which are interposed between the application components and the hardware components to manage these physical resources: components for managing local technical resources (OS, SBDG, etc.), management components communications, distributed resource management components. It also defines all the types of hardware components on which an IT system is based: servers, workstations and terminals, network, etc."
+7,BCK,Backend,"The backend represents the computer translation of business processes, the technical means and data implemented for their use, as well as all the external interactions implemented for their realization."
+8,HEB,Hosting,Allowing remote users to use a digital service

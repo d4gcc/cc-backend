@@ -1,0 +1,58 @@
+id,sub_family_id,ppp,recommendation,target,odd,cycle_de_vie,family_id
+1,STR-1,7A/8A/8A,Define and validate the needs and challenges of the project in order to anticipate the impacts,,ODD#12,,1
+2,STR-2,5A/7A/3A,"Plan, prepare and validate the availability of Human Resources in Sustianable IT",Strategy,ODD#12,,1
+3,STR-3,4A/2A/8A,Determine and plan the capacity to monitor and capitalize on the Digital components Project manager,Strategy,ODD#12,,1
+4,STR-4,1A/0A/2A,"Plan, prepare and validate the technical elements of the project for compliance with Sustainable IT",Strategy,ODD#10 ; ODD#12 ; ODD#13,,1
+5,SPC-1,4A/4A/1A,Organize so that human resources would take into account the Sustainable IT approach in a project,,ODD#12,,2
+6,SPC-2,1A/1A/3A,Involve users in Sustainable IT project team,,ODD#12,,2
+7,SPC-3,1A/0A/0A,Organize the project methodology to carry out   a Sustainable IT approach,,ODD#12,,2
+8,SPC-4,3A/7A/5A,Build the scope of the project and validate the relevance of each feature,,ODD#10 ; ODD#12 ; ODD#13,,2
+9,SPC-5,2A/1A/6A,Prepare the monitoring of the project life cycle and performance indicators / Sustainable IT profit,,ODD#12,,2
+10,SPC-6,1A/2A/3A,Define the production's  environment in which the project will be built and deployed congruently with Sustainable IT principles,,ODD#9 ; ODD#12 ; ODD#13,,2
+11,UX/UI-1,1A/1A/4A,Incorporate Sustainable IT into the major objectives of the project,,ODD#5 ; ODD#8 ; ODD#9 ; ODD#10 ; ODD#12 ; ODD#13 ,,3
+12,UX/UI-2,1A/3A/2A,Raise awareness among internal and external stakeholders about Responsible Digital,,ODD#10 ; ODD#12 ; ODD#13,,3
+13,UX/UI-3,2A/7A/4A,Make the digital service available and accessible to the greatest number of users,,ODD#5 ; ODD#8 ; ODD#10,,3
+14,UX/UI-4,19A/14A/11A,Enable people with disabilities to access and use the digital service effectively,,ODD#3 ; ODD#8 ; ODD#10,,3
+15,UX/UI-5,3A/1A/0A,"""Less is More"": Focus on essential features and simplify your interface",,ODD#10 ; ODD#12 ; ODD#13,,3
+16,UX/UI-6,1A/0A/0A,Enabling users to reduce their impacts,,0,Utilisation,3
+17,UX/UI-7,0A/2A/3A,"""Barebone Iteration"": Iterate your solution until minimalism ""acceptable"" by your users",,,,3
+18,UX/UI-8,6A/0A/1A,"Media engineering: reducing the digital service media as much as possible (images, animations, content, etc.)",,ODD#12 ; ODD#13,,3
+19,UX/UI-9,1A/3A/2A,Value: be genuine with your users,,ODD#10 ; ODD#12,,3
+20,UX/UI-10,1A/3A/3A,"Value: design an ethical Digital Service, in line with your values",,ODD#3 ; ODD#5 ; ODD#10 ; ODD#12,,3
+21,CTN-1,0A/1A/0A,Apply an editorial approach for content,,ODD#12,,4
+22,CTN-2,3A/1A/0A,Reduce the footprint of static content,,ODD#12 ; ODD#13,,4
+23,CTN-3,8A/3A/0A,"Avoid active content, keep dynamic content under user control",,ODD#12 ; ODD#13,,4
+24,CTN-4,2A/3A/0A,Facilitate the perception of content by the user,,ODD#10 ; ODD#12,,4
+25,CTN-5,1A/2A/3A,Ensure the link between content and uses,,ODD#10 ; ODD#12,,4
+26,FRT-1,2A/1A/3A,Validate the scope and functional coverage of the project,,ODD#12 ; ODD#13,,5
+27,FRT-2,0A/1A/1A,Unite teams and target audience,,ODD#8,,5
+28,FRT-3,,Use environments and tools that limit impacts,,ODD#12 ; ODD#13,,5
+29,FRT-4,3A/1A/0A,Reduce the effects of obsolescence,,ODD#10 ; ODD#12 ; ODD#13 ; ODD#15,,5
+30,FRT-5,2A/1A/2A,Implement and develop functionalities to limit impacts,,ODD#12 ; ODD#13,,5
+31,FRT-6,3A/0A/3A,Ensure that the use of the service allows the control of impacts,,ODD#12 ; ODD#13,,5
+32,FRT-7,7A/4A/6A,Limit the use of hardware components or sensors on user terminals,,ODD#10 ; ODD#12 ; ODD#13 ; ODD#15,,5
+33,FRT-8,0A/2A/0A,Facilitate the use of the service under good conditions for all users,,ODD#10 ; ODD#12 ;,,5
+34,FRT-9,9A/5A/2A,Implement technical solutions with the lowest impact,,ODD#12 ; ODD#13,,5
+35,FRT-10,1A/0A/1A,Look for the implementation of sober behaviors,,ODD#12 ; ODD#13,,5
+36,ARCH-1,0A/2A/3A,Apply an approach that guarantees the Sustainable IT aspects,,ODD#12,,6
+37,ARCH-2,3A/0A/3A,Anticipate the operation of services,,ODD#9,,6
+38,ARCH-3,1A/2A/2A,Manage data life,,ODD#9 ; ODD#12,,6
+39,ARCH-4,4A/0A/3A,Control and measure the impacts,,ODD#12,,6
+40,ARCH-5,1A/1A/1A,Limit volumes in exchanges,,ODD#10,,6
+41,ARCH-6,2A/2A/4A,Define a scalable production model,,ODD#10 ; ODD#12,,6
+42,ARCH-7,2A/1A/2A,"Associate data, flows, applications and security to allow their identification and traceability",,ODD#9 ; ODD#12,,6
+43,ARCH-8,3A/6A/5A,Anticipate impacts on production,,ODD#10 ; ODD#12 ; ODD#13,,6
+44,ARCH-9,3A/1A/5A,Define the Sustainable IT objectives of the project and their adequacy in the operational context,,ODD#12 ; ODD#13 ; ODD#15,,6
+45,ARCH-10,1A/4A/4A,Integrate the teams into the project,,ODD#12,,6
+46,BCK-1,7A/2A/4A,Reduce the impact of data from its storage and access,,ODD#12 ; ODD#13,,7
+47,BCK-2,2A/0A/2A,"Use the technical components that improve the sustainable IT aspects, security and performance",,ODD#9 ; ODD#12 ; ODD#13,,7
+48,BCK-3,3A/0A/3A,Limit the volume of exchanges,,ODD#12 ; ODD#13,,7
+49,BCK-4,2A/2A/4A,Use development principles that reduce impacts,,ODD#12 ; ODD#13,,7
+50,BCK-5,1A/2A/6A,Control regulatory aspects,,ODD#10 ; ODD#12,,7
+51,BCK-6,8A/1A/8A,Set up a methodology that promotes the consideration of Sustainable IT aspects,,ODD#10 ; ODD#12 ; ODD#13,,7
+52,HEB-1,11A/0A/0A,Reduce the impact of hosting,,ODD#6 ; ODD#7 ; ODD#12 ; ODD#13 ; ODD#15,,8
+53,HEB-2,0A/1A/0A,Combine human and technical aspects,,ODD#7 ; ODD#9 ; ODD#10 ; ODD#12,,8
+54,HEB-3,3A/0A/2A,Adapt the use of technical equipment to needs,,ODD#7 ; ODD#8 ; ODD#12,,8
+55,HEB-4,4A/0A/1A,Monitor the impact of the host,,ODD#7 ; ODD#9 ; ODD#12 ; ODD#17,,8
+56,HEB-5,2A/2A/2A,Maintain consistency of positioning between needs and hosting choices,,ODD#7 ; ODD#8 ; ODD#12,,8
+57,HEB-6,1A/1A/1A,Define the challenges and functionalities of the project,,ODD#12 ; ODD#13,,8
