@@ -1,11 +1,13 @@
 # This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
 # For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
 
-name: Java CI with Maven
+name: Build and Deploy
 
 on:
   push:
     branches: [ master ]
+  pull_request:
+    types: [opened, synchronize, reopened]
 
 jobs:
   build:
@@ -22,3 +24,21 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: ./mvnw -Pprod clean package
+    - uses: actions/upload-artifact@v2
+      with:
+        name: latest-build
+        path: ./target/quarkus-app/*.jar
+
+    - name: scp ssh pipelines
+      uses: cross-the-world/ssh-scp-ssh-pipelines@latest
+      env:
+        LASTSSH: "Run JAR after copying"
+      with:
+        host: ${{ secrets.DC_HOST }}
+        user: ${{ secrets.DC_USER }}
+        pass: ${{ secrets.DC_PASS }}
+        scp: |-
+          ./target/quarkus-app/* => /d4gcc/be-deploy/quarkus-app/
+        last_ssh: |-
+          java -jar /d4gcc/be-deploy/quarkus-app/*.jar &
+
