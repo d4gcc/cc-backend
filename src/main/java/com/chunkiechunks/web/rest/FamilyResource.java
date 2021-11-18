@@ -45,7 +45,7 @@ public class FamilyResource {
     }
 
     @GET
-    @Path("/{id}/sub_families")
+    @Path("{id}/sub_families")
     public Response getAllPaginatedSubFamiliesByFamilyId(@BeanParam PageRequestVM pageRequest, @BeanParam SortRequestVM sortRequest,
                                                          @Context UriInfo uriInfo, @PathParam("id") Long id) {
         log.debug("REST request to get a page of Sub Families");
@@ -57,7 +57,7 @@ public class FamilyResource {
     }
 
     @GET
-    @Path("/{id}/practices")
+    @Path("{id}/practices")
     public Response getAllPaginatedPracticesByFamilyId(@BeanParam PageRequestVM pageRequest, @BeanParam SortRequestVM sortRequest,
                                                        @Context UriInfo uriInfo, @PathParam("id") Long id) {
         log.debug("REST request to get a page of Practices by Family ID: {}", id);
