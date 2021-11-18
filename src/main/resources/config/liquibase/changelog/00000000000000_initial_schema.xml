@@ -57,5 +57,55 @@
             tableName="sub_families">
         </loadData>
     </changeSet>
+    <changeSet id="00000000000003" author="jhipster">
+        <createTable tableName="practices">
+            <column name="id" type="bigint" autoIncrement="${autoIncrement}" >
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="practice_id" type="varchar(50)">
+                <constraints unique="true" nullable="false" uniqueConstraintName="ux_practice_id"/>
+            </column>
+            <column name="planet" type="nvarchar(10)"/>
+            <column name="people" type="nvarchar(10)"/>
+            <column name="prosperity" type="nvarchar(10)"/>
+            <column name="keyword" type="nvarchar(50)"/>
+            <column name="precision_of_recommendations" type="nvarchar(500)"/>
+            <column name="criteria" type="nvarchar(500)"/>
+            <column name="justification" type="nvarchar(1000)"/>
+            <column name="test_1_1_1" type="nvarchar(500)"/>
+            <column name="test_1_1_2" type="nvarchar(500)"/>
+            <column name="test_x" type="nvarchar(500)"/>
+            <column name="correspondence" type="nvarchar(500)"/>
+            <column name="correspondence_link" type="nvarchar(500)"/>
+            <column name="target" type="nvarchar(500)"/>
+            <column name="formal_type" type="nvarchar(20)"/>
+            <column name="difficulty" type="nvarchar(10)"/>
+            <column name="misc_comments" type="nvarchar(100)"/>
+            <column name="odds" type="nvarchar(100)"/>
+            <column name="is_unmissable" type="tinyint"/>
+            <column name="cycle_de_vie" type="nvarchar(50)"/>
+            <column name="tags" type="nvarchar(100)"/>
+            <column name="actors" type="nvarchar(200)"/>
+            <column name="indicators" type="nvarchar(50)"/>
+            <column name="x_indicator" type="nvarchar(100)"/>
+            <column name="y_indicator" type="nvarchar(100)"/>
+            <column name="priority" type="nvarchar(50)"/>
+            <column name="recurrence" type="nvarchar(50)"/>
+            <column name="use_case" type="nvarchar(500)"/>
+            <column name="sub_family_id" type="bigint">
+                <constraints nullable="false" />
+            </column>
+        </createTable>
+        <addForeignKeyConstraint baseColumnNames="sub_family_id"
+                                 baseTableName="practices"
+                                 constraintName="fk_sub_family_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="sub_families"/>
+        <loadData
+            file="config/liquibase/data/practices.csv"
+            separator=","
+            tableName="practices">
+        </loadData>
+    </changeSet>
 
 </databaseChangeLog>

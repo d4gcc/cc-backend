@@ -1,7 +1,4 @@
 {
   "resources": [
-    {
-      "pattern": "jwt/privateKey.pem"
-    }
   ]
 }
