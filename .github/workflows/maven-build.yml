@@ -6,6 +6,8 @@ name: Java CI with Maven
 on:
   push:
     branches: [ master ]
+  pull_request:
+    types: [opened, synchronize, reopened]
 
 jobs:
   build:
@@ -22,3 +24,7 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: ./mvnw -Pprod clean package
+    - uses: actions/upload-artifact@v2
+      with:
+        name: latest-build
+        path: ./target/quarkus-app/*.jar
