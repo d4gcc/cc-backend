@@ -28,4 +28,10 @@ public class PracticeService {
         return new Paged<>(Practice.findAllPaginatedPracticesBySubFamilyId(sort, page, subFamilyId))
             .map(practiceMapper::toDto);
     }
+
+    public Paged<PracticeDTO> getAllPaginatedPracticesByFamilyId(Sort sort, Page page, Long familyId) {
+        log.debug("Request to get all Practices with Family ID: {}", familyId);
+        return new Paged<>(Practice.findAllPaginatedPracticesByFamilyId(sort, page, familyId))
+            .map(practiceMapper::toDto);
+    }
 }

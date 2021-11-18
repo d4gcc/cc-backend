@@ -399,6 +399,11 @@ public class Practice extends PanacheEntityBase implements Serializable {
         return find("subFamilyId = ?1", sort, subFamilyId).page(page);
     }
 
+    public static PanacheQuery<Practice> findAllPaginatedPracticesByFamilyId(Sort sort, Page page, Long familyId) {
+        return find("select p from Practice p JOIN SubFamily sf on p.subFamilyId = sf.id " +
+            "WHERE sf.familyId = ?1", sort, familyId).page(page);
+    }
+
     public enum FormalType {
         RECO("Recommendation"),
         CONSEIL("Advice");
