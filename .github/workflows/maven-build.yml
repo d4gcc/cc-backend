@@ -40,5 +40,5 @@ jobs:
         scp: |-
           ./target/quarkus-app/* => /d4gcc/be-deploy/quarkus-app/
         last_ssh: |-
-          java -jar /d4gcc/be-deploy/quarkus-app/*.jar &
+          sudo java -jar /d4gcc/be-deploy/quarkus-app/*.jar &
 
