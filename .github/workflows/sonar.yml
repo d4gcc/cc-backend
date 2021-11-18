@@ -1,4 +1,4 @@
-name: Build
+name: Maven Build and Sonar Scan
 on:
   push:
     branches:
