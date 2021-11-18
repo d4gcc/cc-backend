@@ -2,7 +2,9 @@ package com.chunkiechunks.web.rest;
 
 import com.chunkiechunks.service.FamilyService;
 import com.chunkiechunks.service.Paged;
+import com.chunkiechunks.service.PracticeService;
 import com.chunkiechunks.service.SubFamilyService;
+import com.chunkiechunks.service.dto.PracticeDTO;
 import com.chunkiechunks.service.dto.SubFamilyDTO;
 import com.chunkiechunks.web.rest.vm.PageRequestVM;
 import com.chunkiechunks.web.rest.vm.SortRequestVM;
@@ -28,11 +30,13 @@ public class FamilyResource {
 
     private final FamilyService familyService;
     private final SubFamilyService subFamilyService;
+    private final PracticeService practiceService;
 
     @Inject
-    public FamilyResource(FamilyService familyService, SubFamilyService subFamilyService) {
+    public FamilyResource(FamilyService familyService, SubFamilyService subFamilyService, PracticeService practiceService) {
         this.familyService = familyService;
         this.subFamilyService = subFamilyService;
+        this.practiceService = practiceService;
     }
 
     @GET
@@ -48,6 +52,18 @@ public class FamilyResource {
         var page = pageRequest.toPage();
         var sort = sortRequest.toSort();
         Paged<SubFamilyDTO> result = subFamilyService.getAllPaginatedSubFamiliesByFamilyId(sort, page, id);
+        var response = PaginationUtil.withPaginationInfo(Response.ok().entity(result.content), uriInfo, result);
+        return response.build();
+    }
+
+    @GET
+    @Path("/{id}/practices")
+    public Response getAllPaginatedPracticesByFamilyId(@BeanParam PageRequestVM pageRequest, @BeanParam SortRequestVM sortRequest,
+                                                       @Context UriInfo uriInfo, @PathParam("id") Long id) {
+        log.debug("REST request to get a page of Practices by Family ID: {}", id);
+        var page = pageRequest.toPage();
+        var sort = sortRequest.toSort();
+        Paged<PracticeDTO> result = practiceService.getAllPaginatedPracticesByFamilyId(sort, page, id);
         var response = PaginationUtil.withPaginationInfo(Response.ok().entity(result.content), uriInfo, result);
         return response.build();
     }
