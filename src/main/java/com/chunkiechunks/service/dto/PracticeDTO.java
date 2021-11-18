@@ -24,7 +24,7 @@ public class PracticeDTO {
     private String priority;
     private String miscComments;
     private String odds;
-    private Boolean isUnmissable;
+    private Boolean unmissable;
     private String cycleDeVie;
     private String tags;
     private String actors;
