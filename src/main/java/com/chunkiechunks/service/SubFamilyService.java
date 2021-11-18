@@ -1,6 +1,5 @@
 package com.chunkiechunks.service;
 
-import com.chunkiechunks.domain.Family;
 import com.chunkiechunks.domain.SubFamily;
 import com.chunkiechunks.service.dto.SubFamilyDTO;
 import com.chunkiechunks.service.mapper.SubFamilyMapper;
@@ -11,7 +10,7 @@ import org.slf4j.LoggerFactory;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
-import java.util.List;
+import java.util.Optional;
 
 @ApplicationScoped
 public class SubFamilyService {
@@ -23,6 +22,10 @@ public class SubFamilyService {
     @Inject
     public SubFamilyService(SubFamilyMapper subFamilyMapper) {
         this.subFamilyMapper = subFamilyMapper;
+    }
+
+    public Optional<SubFamily> findSubFamilyById(Long id) {
+        return SubFamily.findByIdOptional(id);
     }
 
     public Paged<SubFamilyDTO> getAllPaginatedSubFamiliesByFamilyId(Sort sort, Page page, Long familyId) {
