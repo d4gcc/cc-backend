@@ -41,6 +41,6 @@ jobs:
           ./target/quarkus-app/* => /d4gcc/be-deploy/quarkus-app/
         last_ssh: |-
           echo $LASTSSH
-          ls -la
+          ls -la /d4gcc/be-deploy/quarkus-app/
           java -jar ./d4gcc/be-deploy/quarkus-app/*.jar
 
