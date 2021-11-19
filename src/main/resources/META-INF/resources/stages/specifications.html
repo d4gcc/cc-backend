@@ -4,22 +4,21 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Specifications</title>
-<link rel="stylesheet" href="../style_stages.css">
+<link rel="stylesheet" href="../css/style_stages.css">
+<link rel="stylesheet" href="../css/trying.css">
+<!--<link rel="stylesheet" href="../style_test.css">-->
+<link rel="stylesheet" href="../css/bootstrap.min.css">
 <html lang="en">
-
 <head>
-    <!-- Layout of the website, the colors are specified in the styles.css file -->
-
 </head>
-
 <!-- Body of the website -->
-
 <body>
     <!-- Navigation Bar -->
     <div id="navbar">
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="strategy.html">Strategy</a></li>
+            <li><a>Specifications</a></li>
             <li><a href="ui.html">UI/UX</a></li>
             <li><a href="contents.html">Contents</a></li>
             <li><a href="architecture.html">Architecture</a></li>
@@ -28,32 +27,43 @@
             <li><a href="hosting.html">Hosting</a></li>
             <li>
                 <div class="cart">
-                    <h6>Cart</h6>
+                    <a href="../basket.html">Cart</a>
                     <div class="popup">
-                        <div class="row checkout">
-                            <h4>Your Selection : 20</h4>
+                        <div class="row checkout" id="checkout">
                         </div>
                         <div class="row checkout">
-                            <span>  
-						<a class="checkout-button" href="#">View</a>  
-					</span>
-
                             <span>
-						<a class="checkout-button" href="#">Download</a>  
-					</span>
+                                <a class="checkout-button" href="./basket.html">View</a>
+                            </span>
                         </div>
                     </div>
                 </div>
             </li>
         </ul>
     </div>
-
+    <div class="row text-white">
+        <div class="col-6 col-md-3"></div>
+        <div class="col-6 col-md-6">
+            <div class="panel-group wrap" id="accordion" role="tablist" aria-multiselectable="true">
+                <div id="checkbox">
+                    <ul id="wkslist"></ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <pre class="tab">              </pre>
+            <button type="button" class="btn btn-dark" id="buttonCheck">Add To Cart</button>
+        </div>
+    </div>
+    <script>
+        var family = 'Specifications';
+        var sub_fam_url = "https://vps-f2208d90.vps.ovh.net/api/families/2/sub_families";
+        var our_url = "https://vps-f2208d90.vps.ovh.net/api/families/2/practices?size=9999" // "https://jsonplaceholder.typicode.com/todos/1"; // "http://90b8-193-50-135-205.ngrok.io/api/families/2/sub_families";
+    </script>
     <!-- Javascript Libraries  -->
     <script src="../js/jquery/jquery.min.js"></script>
     <script src="../js/jspdf.umd.min.js"></script>
-    <script src="../js/jspdf.debug.js" ></script>
-    <script src="../js/script.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/script.js"></script>
 </body>
-
 </html>

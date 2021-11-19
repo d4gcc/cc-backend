@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <title>D4G</title>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/style.css">
 <html>
-
 <body>
     <div id="navbar">
         <ul>
+            <li><a>Home</a></li>
             <li><a href="stages/strategy.html">Strategy</a></li>
             <li><a href="stages/specifications.html">Specifications</a></li>
             <li><a href="stages/ui.html">UI/UX</a></li>
@@ -17,26 +17,20 @@
             <li><a href="stages/hosting.html">Hosting</a></li>
             <li>
                 <div class="cart">
-                    <h6>Cart</h6>
+                    <a href="basket.html">Cart</a>
                     <div class="popup">
-                        <div class="row checkout">
-                            <h4>Your Selection : 20</h4>
+                        <div class="row checkout" id="checkout">
                         </div>
                         <div class="row checkout">
                             <span>
-                            <a class="checkout-button" href="#">View</a>
-                        </span>
-
-                            <span>
-                            <a class="checkout-button" href="#">Download</a>
-                        </span>
+                                <a class="checkout-button" href="./basket.html">View</a>
+                            </span>
                         </div>
                     </div>
                 </div>
             </li>
         </ul>
     </div>
-
     <div class="wrapper">
         <h1>BEST PRACTICES</h1>
         <div class="cols">
@@ -165,6 +159,13 @@
             </div>
         </div>
     </div>
+    <script src="./js/jquery/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            let cart_size = !sessionStorage.getItem('cart') ? 0
+                : JSON.parse(sessionStorage.getItem('cart')).length;
+            $('#checkout').empty().append(`<h4>Your selection: ${cart_size}</h4>`);
+        });
+    </script>
 </body>
-
 </html>
