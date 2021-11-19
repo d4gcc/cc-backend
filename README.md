@@ -1,4 +1,4 @@
-# d4g_2021_BE
+# Chunkie Chunks - D4G - Backend
 
 This application was generated using JHipster 6.10.5 and JHipster Quarkus 1.1.1, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v6.10.5](https://www.jhipster.tech/documentation-archive/v6.10.5).
 

@@ -18,7 +18,7 @@ public class Main {
     static Server server;
 
     public static void main(String[] args) throws SQLException {
-        System.out.println("Starting up the application...");
+        log.info("Starting up the application...");
         log.info("TCP server starting....");
         server = Server.createTcpServer("-tcpPort", "9002", "-tcpAllowOthers").start();
         Quarkus.run(args);

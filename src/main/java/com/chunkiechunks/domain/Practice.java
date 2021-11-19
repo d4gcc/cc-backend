@@ -315,19 +315,19 @@ public class Practice extends PanacheEntityBase implements Serializable {
         this.indicators = indicators;
     }
 
-    public String getxIndicator() {
+    public String getXIndicator() {
         return xIndicator;
     }
 
-    public void setxIndicator(String xIndicator) {
+    public void setXIndicator(String xIndicator) {
         this.xIndicator = xIndicator;
     }
 
-    public String getyIndicator() {
+    public String getYIndicator() {
         return yIndicator;
     }
 
-    public void setyIndicator(String yIndicator) {
+    public void setYIndicator(String yIndicator) {
         this.yIndicator = yIndicator;
     }
 
