@@ -31,6 +31,6 @@ public class Paged<T> {
 
     public <R> Paged<R> map(Function<T, R> mapper) {
         var mapped = content.stream().map(mapper).collect(Collectors.toList());
-        return new Paged<R>(this.index, this.size, this.totalCount, this.pageCount, mapped);
+        return new Paged<>(this.index, this.size, this.totalCount, this.pageCount, mapped);
     }
 }
